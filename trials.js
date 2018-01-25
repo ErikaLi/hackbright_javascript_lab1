@@ -175,9 +175,16 @@ function printReport(customerObj) {
 // Bank Manager
 
 // Create map of customer addresses
+let frequentCustomers = new Map([
+    ['Mel Melitipolski', '707 Birch Street'],
+    ['Barbara Brown','8997 Jones Street']
+    ])
 
 
 // Write a function to return the address of a given person
+function getAddress(customerName) {
+    return frequentCustomers.get(customerName);
+}
 
 
 // Add a function to create an employee schedule for the week 
